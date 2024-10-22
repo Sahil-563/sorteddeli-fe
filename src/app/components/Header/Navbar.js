@@ -67,7 +67,7 @@ const Navbar = () => {
       {/*Top section */}
       <div className="bg-[#1e1e1e] text-white flex h-[58px] w-full lg:justify-around  justify-between items-center lg:px-24 px-6 text-[14px] font-bold cursor-pointer">
         <div className=" hidden gap-6  lg:flex">
-          {Navlinks.map((link) => (
+          {Navlinks.map((link, key) => (
             <div key={link.id}>{link.name}</div>
           ))}
 
@@ -124,7 +124,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <MenuOverlay onClick={toggleMenu}>
           <MenuContainer onClick={(e) => e.stopPropagation()}>
-            {Navlinks.map((link) => (
+            {Navlinks.map((link, key) => (
               <div key={link.id} className="py-2 px-4 text-lg font-bold">
                 {link.name}
               </div>
@@ -148,12 +148,12 @@ const Navbar = () => {
               </button>
             </div>
 
-            {Navlinks.map((link) => (
+            {Navlinks.map((link, key) => (
               <div key={link.id} className="py-2 px-4 text-lg font-bold">
                 {link.name}
               </div>
             ))}
-            {bottomSection.map((data) => (
+            {bottomSection.map((data, key) => (
               <div key={data.id} className="flex items-center gap-4 mt-2">
                 <img src={data.image} alt="" />
                 <TextBox className="text-lg font-bold">{data.name}</TextBox>
@@ -164,7 +164,7 @@ const Navbar = () => {
       )}
       {/*BottomSection */}
       <StyledContainer>
-        {bottomSection.map((data) => (
+        {bottomSection.map((data, key) => (
           <StyledItem key={data.id}>
             <img src={data.image} alt="" />
             <TextBox>{data.name}</TextBox>
