@@ -129,8 +129,9 @@ const Navbar = () => {
                 {link.name}
               </div>
             ))}
+
             {bottomSection.map((data) => (
-              <div className="flex items-center gap-4 mt-2">
+              <div key={data.id} className="flex items-center gap-4 mt-2">
                 <img src={data.image} alt="" />
                 <TextBox className="text-lg font-bold">{data.name}</TextBox>
               </div>
