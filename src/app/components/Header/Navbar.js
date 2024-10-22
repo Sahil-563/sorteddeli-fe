@@ -153,7 +153,7 @@ const Navbar = () => {
                 {link.name}
               </div>
             ))}
-            {bottomSection.map((data, key) => (
+            {bottomSection.map((data) => (
               <div key={data.id} className="flex items-center gap-4 mt-2">
                 <img src={data.image} alt="" />
                 <TextBox className="text-lg font-bold">{data.name}</TextBox>
@@ -164,7 +164,7 @@ const Navbar = () => {
       )}
       {/*BottomSection */}
       <StyledContainer>
-        {bottomSection.map((data, key) => (
+        {bottomSection.map((data) => (
           <StyledItem key={data.id}>
             <img src={data.image} alt="" />
             <TextBox>{data.name}</TextBox>
