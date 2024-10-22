@@ -9,7 +9,7 @@ const ProductCard = ({ data }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <CardContainer className="h-full max-h-max w-[265.6px] cursor-pointer max-w-max">
+    <CardContainer className="h-full max-h-max  cursor-pointer max-w-max">
       <div
         className="relative"
         onMouseEnter={() => setHovered(true)}
@@ -24,7 +24,7 @@ const ProductCard = ({ data }) => {
               src={data.hoverImage}
               alt="Hovered Product"
               height={238}
-              width={238}
+              width={230}
             />
           )}
 

@@ -11,7 +11,7 @@ const OurBestSellers = () => {
         OUR BESTSELLERS
       </h2>
 
-      <div className="flex justify-center gap-8">
+      <div className="flex justify-center gap-8 flex-wrap">
         {featuredProductCard.map((data) => (
           <ProductCard key={data.id} data={data} />
         ))}

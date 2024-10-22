@@ -44,7 +44,7 @@ const BannerSlider = () => {
   ];
 
   return (
-    <SliderContainer className="slider-container lg:h-[550px] overflow-hidden">
+    <SliderContainer className="slider-container lg:h-[550px] overflow-hidden hidden lg:block">
       <Slider {...settings}>
         {bannerData.map((data) => (
           <img

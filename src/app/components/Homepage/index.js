@@ -13,7 +13,7 @@ import ScrollToTopButton from "../CustomButtons/ScrolltoTop";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <BannerSlider />
       <ProductSection />
       <PromoBanner />

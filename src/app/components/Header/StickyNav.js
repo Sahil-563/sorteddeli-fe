@@ -41,7 +41,7 @@ const StickyNav = () => {
     },
   ];
   return (
-    <div className="fixed w-full top-0 z-50 bg-[#fff]">
+    <div className="fixed w-full top-0 z-50 bg-[#fff] hidden lg:block">
       <StyledContainer>
         {bottomSection.map((data) => (
           <StyledItem key={data.id}>

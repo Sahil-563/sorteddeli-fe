@@ -18,7 +18,7 @@ const BlogSection = () => {
 
       <div className="mt-5 flex justify-center mb-10">
         <Link href="/blog">
-          <button className="py-[11px] px-[25px] bg-[#1e1e1e] rounded">
+          <button className="py-[11px] px-[25px] bg-[#1e1e1e] text-white rounded">
             View All
           </button>
         </Link>

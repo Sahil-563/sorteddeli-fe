@@ -48,15 +48,15 @@ const Footer = () => {
       <footer className="bg-[#1e1e1e]">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-14">
           <div className="md:flex pb-[20px]">
-            <div className="pl-14 flex flex-col gap-9 w-[487px] ml-[15px]">
+            <div className="pl-14 flex flex-col gap-9 lg:w-[487px] ml-[15px]">
               <img
                 src="/sdlogo.png"
                 className="h-[90px] w-[40px]"
                 alt="SD Logo"
               />
               <div className="flex items-center gap-6 text-base max-w-max border rounded-r p-2 font-semibold whitespace-nowrap dark:text-white">
-                <FaPhoneVolume />
-                <p className="font-bold">+91 77580 99608</p>
+                <FaPhoneVolume color="white" />
+                <p className="font-bold text-white">+91 77580 99608</p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4 pl-[75px]">

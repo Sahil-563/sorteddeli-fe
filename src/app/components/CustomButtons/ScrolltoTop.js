@@ -28,7 +28,7 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <div className="">
+    <div className="hidden lg:block">
       <ScrollToTop
         className={`scroll-to-top ${isVisible ? "show" : ""}`}
         onClick={scrollToTop}

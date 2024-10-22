@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide-react": "^0.453.0",
     "next": "14.1.3",
     "react": "^18",
-    "react-ai-search-bar": "^1.0.4-beta.3",
+    "react-ai-search-bar": "^1.0.4-beta.4",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-slick": "^0.30.2",

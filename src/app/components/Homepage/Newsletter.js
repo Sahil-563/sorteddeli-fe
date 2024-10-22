@@ -9,7 +9,11 @@ const Newsletter = () => {
       </h2>
       <div className="w-full flex justify-center ">
         <EmailForm>
-          <EmailInput type="email" placeholder="Enter your email" />
+          <EmailInput
+            className="w-full"
+            type="email"
+            placeholder="Enter your email"
+          />
           <SubscribeButton onClick={(e) => e.preventDefault()}>
             Subscribe
           </SubscribeButton>
@@ -36,7 +40,6 @@ const EmailForm = styled.form`
 const EmailInput = styled.input`
   border: 1px;
   border-color: rgb(221, 221, 221);
-  width: 900px;
   border-radius: 4px;
   padding: 14px;
   margin: 8px;

@@ -137,6 +137,11 @@ const ProductFilter = styled.div`
   font-weight: 600;
   padding-top: 40px;
   padding-bottom: 20px;
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+    gap: 25px;
+    padding-left: 30px;
+  }
 `;
 
 const ProductSlider = styled.div`
