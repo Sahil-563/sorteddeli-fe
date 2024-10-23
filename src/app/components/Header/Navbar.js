@@ -71,7 +71,7 @@ const Navbar = () => {
             <div key={link.id}>{link.name}</div>
           ))}
 
-          <div className="flex gzap-4 items-  center ml-16">
+          <div className="flex gap-4 items-center ml-16">
             <div className="flex items-center gap-3">
               <span>
                 <FaPhoneVolume />
