@@ -102,7 +102,7 @@ const Navbar = () => {
         <div className="hidden lg:block" style={{ flexShrink: 0 }}>
           <Image src="/sorteddeli-logo.png" alt="" height={75} width={200} />
         </div>
-        <AiBar className="text-black flex-grow px-3">
+        <AiBar className="flex-grow px-3">
           <SearchBar
             placeholder={placeHolders}
             client="Sorted"
@@ -238,4 +238,8 @@ const TextBox = styled.p`
 
 const AiBar = styled.div`
   color: #000 !important;
+
+  h3 {
+    font-weight: bold;
+  }
 `;
