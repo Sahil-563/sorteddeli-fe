@@ -65,13 +65,13 @@ const Navbar = () => {
   return (
     <nav className="">
       {/*Top section */}
-      <div className="bg-[#1e1e1e] text-white flex h-[58px] w-full lg:justify-around  justify-between items-center lg:px-24 px-6 text-[14px] font-bold cursor-pointer">
+      <div className="bg-[#1e1e1e] text-white flex h-[58px] w-full lg:justify-around  justify-between items-center lg:px-24 px-3 text-[14px] font-bold cursor-pointer">
         <div className=" hidden gap-6  lg:flex">
           {Navlinks.map((link, key) => (
             <div key={link.id}>{link.name}</div>
           ))}
 
-          <div className="flex gap-4 items-center ml-16">
+          <div className="flex gzap-4 items-  center ml-16">
             <div className="flex items-center gap-3">
               <span>
                 <FaPhoneVolume />
@@ -98,19 +98,19 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-around items-center pt-8 ">
-        <div className="hidden md:block">
+      <div className="w-full flex md:px-20 items-center pt-8 gap-20">
+        <div className="hidden lg:block" style={{ flexShrink: 0 }}>
           <Image src="/sorteddeli-logo.png" alt="" height={75} width={200} />
         </div>
-        <AiBar className="text-black md:w-1/2 ">
+        <AiBar className="text-black flex-grow px-3">
           <SearchBar
             placeholder={placeHolders}
             client="Sorted"
-            top="155px"
+            top="60px"
             theme="dark"
           />
         </AiBar>
-        <div className=" hidden md:flex gap-6">
+        <div className="hidden lg:flex gap-6">
           <span>
             <BsSuitHeartFill color="#000" fontSize={18} />
           </span>
